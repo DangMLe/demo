@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		try{
+			SpringApplication.run(DemoApplication.class, args);
+		} catch (Exception e) {
+			e.printStackTrace(); 
+		}
 	}
 
 }

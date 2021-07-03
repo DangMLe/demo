@@ -21,7 +21,13 @@ public class Employee {
 	
 	@Column(name="email")
 	private String email;
+	
+	Employee() {}
 
+	public Employee(String name, String email) {
+	  this.name = name;
+	  this.email = email;
+	}
 	public Long getId() {
 		return id;
 	}
