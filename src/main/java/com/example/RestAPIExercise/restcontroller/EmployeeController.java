@@ -1,6 +1,10 @@
-package com.example.demo.restcontroller;
+package com.example.RestAPIExercise.restcontroller;
 
 import java.util.List;
+
+import com.example.RestAPIExercise.entity.Employee;
+import com.example.RestAPIExercise.exception.EmployeeException;
+import com.example.RestAPIExercise.repository.EmployeeRepository;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,10 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.example.demo.entity.Employee;
-import com.example.demo.exception.EmployeeException;
-import com.example.demo.repository.EmployeeRepository;
 
 @RestController
 class EmployeeController {

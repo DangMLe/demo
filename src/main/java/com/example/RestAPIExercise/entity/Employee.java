@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.RestAPIExercise.entity;
 
 
 import javax.persistence.Column;
