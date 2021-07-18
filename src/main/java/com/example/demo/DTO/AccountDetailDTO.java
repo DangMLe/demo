@@ -1,13 +1,8 @@
 package com.example.demo.DTO;
 
-import com.example.demo.entity.Account;
-import com.example.demo.entity.AccountDetail;
-
 import java.sql.Blob;
 
-public class AccountDTO{
-    private String name;
-    private String password;
+public class AccountDetailDTO {
     private String firstname;
     private String lastname;
     private String role;
@@ -16,18 +11,7 @@ public class AccountDTO{
     private String address;
     private String phonenum;
     private Blob avatar;
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public String getPassword() {
-        return password;
-    }
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    
     public String getFirstname() {
         return firstname;
     }

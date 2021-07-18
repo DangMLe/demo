@@ -18,12 +18,10 @@ public class AccountServiceImpl implements AccountService{
     @Autowired
     private AccountRepository accountRepository;
 
-    @Autowired
-    private ModelMapper modelMapper;
 
     public void setAccountRepository(AccountRepository accountRepository, ModelMapper modelMapper){
         this.accountRepository = accountRepository;
-        this.modelMapper = modelMapper;
+
     }
 
     @Override
